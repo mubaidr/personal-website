@@ -3,7 +3,7 @@
 <http://mubaidr.js.org/>
 <http://mubaidr.netlify.com/>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ceb51bd5-7842-4619-affe-823ef4800531/deploy-status)](https://app.netlify.com/sites/mubaidr/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0d555704-f4b4-40d6-bb78-05495b2b990f/deploy-status)](https://app.netlify.com/sites/mubaidr/deploys)
 
 ## Project setup
 
