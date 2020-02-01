@@ -1,61 +1,37 @@
 <template>
-  <div>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
+  <div class="hero is-large is-dark">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title is-1 is-capitalized">{{ info.name }}</h1>
+        <h2 class="subtitle is-5 has-text-weight-light">{{ info.title }}</h2>
 
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li v-for="section in sections" :key="section.heading">
-              <a href="#" @click.prevent.stop="goto(section.heading)">
-                <i class="material-icons">{{section.icon}}</i>
-                {{section.heading}}
-              </a>
-            </li>
-          </ul>
+        <div>
+          <a
+            v-for="profile in info.profiles"
+            :key="profile.title"
+            :href="profile.url"
+            target="_blank"
+            class="has-text-link"
+          >
+            {{ profile.title }}
+          </a>
         </div>
       </div>
-    </nav>
+    </div>
   </div>
 </template>
+
 <script>
-  import { mapGetters } from 'vuex'
+import { mapGetters } from 'vuex'
 
-  export default {
-    computed: {
-      ...mapGetters(['sections'])
-    },
-    mounted () {
-      this.$nextTick(() => {
-        // Bootstrap navbar
-        const classChildren = x =>
-          document.getElementsByClassName(`navbar-${x}`)[0]
-
-        classChildren('toggle').addEventListener(
-          'click',
-          () => {
-            classChildren('collapse').classList.toggle('collapse')
-          },
-          false
-        )
-      })
-    }
+export default {
+  data() {
+    return {}
+  },
+  computed: {
+    ...mapGetters(['info'])
   }
+}
 </script>
-<style>
-  .navbar {
-    border-radius: 0;
-    margin-bottom: 0;
-  }
 
-  .navbar:not(.footer) {
-    padding-top: 120px;
-  }
-</style>
+<style></style>

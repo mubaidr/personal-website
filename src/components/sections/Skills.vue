@@ -1,23 +1,44 @@
 <template>
-  <div>
-    <h1>
-      {{sections.skills.heading}}
-    </h1>
-    <div class="certifications">
-      <div>
-        <span class="label-custom"
-              v-for="skill in skills"
-              :key="skill.title"
-              v-html="skill.title"></span>
+  <div class="section">
+    <div class="columns">
+      <div class="column is-2">
+        <h2 class="title is-5 is-capitalized has-text-weight-light">
+          {{ sections.skills.title }}
+        </h2>
       </div>
-      <!--
-      <br/>
-      <a href="https://www.freecodecamp.org/mubaidr/front-end-certification" title="Verify this certification" target="_blank">
-        <img src="/static/docs/front-end.jpg" />
-      </a>
-      <a href="https://www.freecodecamp.org/mubaidr/back-end-certification" title="Verify this certification" target="_blank">
-        <img src="/static/docs/back-end.jpg" />
-      </a> -->
+
+      <div class="column is-10">
+        <div v-for="skill in sections.skills.lists" :key="skill.title">
+          <p class="title is-6">{{ skill.title }}</p>
+          <p class="tags">
+            <span
+              v-for="item in skill.list"
+              :key="item.title"
+              class="tag is-light"
+            >
+              {{ item.title }}
+            </span>
+          </p>
+          <br />
+        </div>
+
+        <!-- <br />
+
+        <a
+          href="https://www.freecodecamp.org/mubaidr/front-end-certification"
+          title="Verify this certification"
+          target="_blank"
+        >
+          <img src="/static/docs/front-end.jpg" />
+        </a>
+        <a
+          href="https://www.freecodecamp.org/mubaidr/back-end-certification"
+          title="Verify this certification"
+          target="_blank"
+        >
+          <img src="/static/docs/back-end.jpg" />
+        </a> -->
+      </div>
     </div>
   </div>
 </template>
@@ -25,26 +46,16 @@
 import { mapGetters } from 'vuex'
 
 export default {
-  data () {
+  data() {
     return {}
   },
   computed: {
-    ...mapGetters(['sections', 'skills'])
+    ...mapGetters(['sections'])
   }
 }
 </script>
 <style>
-.label-custom {
-  display: inline-block;
-  margin: 0 5px 5px 0;
-  font-size: 0.75em;
-  font-weight: lighter;
-  padding: 0.25em 0.5em;
-  color: #222;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.certifications {
+/* .certifications {
   width: 100%;
   text-align: center;
 }
@@ -69,10 +80,9 @@ export default {
   -webkit-filter: grayscale(0);
 }
 
-/* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   .certifications a {
     max-width: 100%;
   }
-}
+} */
 </style>
