@@ -32,7 +32,9 @@
   "private": true,
   "scripts": {
     "build": "vue-cli-service build",
+    "deploy": "npm run ssr:static && npm run push:subtree",
     "lint": "vue-cli-service lint --fix",
+    "push:subtree": "git subtree push --prefix=dist/ mubaidr.github.io master",
     "serve": "vue-cli-service serve --open",
     "ssr:build": "vue-cli-service ssr:build",
     "ssr:fix": "vue-cli-service ssr:fix",

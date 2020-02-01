@@ -5,30 +5,9 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0d555704-f4b4-40d6-bb78-05495b2b990f/deploy-status)](https://app.netlify.com/sites/mubaidr/deploys)
 
-## Project setup
+## build steps
 
-```bash
-npm install
-```
+<!-- - git remote add mubaidr.github.io <https://github.com/mubaidr/mubaidr.github.io> -->
 
-### Compiles and hot-reloads for development
-
-```bash
-npm run serve
-```
-
-### Compiles and minifies for production
-
-```bash
-npm run build
-```
-
-### Lints and fixes files
-
-```bash
-npm run lint
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- npm run ssr:static
+- git subtree push --prefix=dist/ mubaidr.github.io master
