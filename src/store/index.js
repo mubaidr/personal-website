@@ -76,10 +76,10 @@ const profile = {
               title: 'VueJS'
             },
             {
-              title: 'C#'
+              title: 'ASP.NET Web Forms'
             },
             {
-              title: 'ASP.NET Web Forms'
+              title: 'C#'
             }
           ]
         },
@@ -113,6 +113,9 @@ const profile = {
               title: 'Bulma'
             },
             {
+              title: 'Bootstrap'
+            },
+            {
               title: 'Stylus'
             },
             {
@@ -120,6 +123,12 @@ const profile = {
             },
             {
               title: 'Git'
+            },
+            {
+              title: 'Rest API'
+            },
+            {
+              title: 'GraphQL API'
             },
             {
               title: 'Apache Cordova'
