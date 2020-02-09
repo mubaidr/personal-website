@@ -41,7 +41,7 @@
     "ssr:fix-vuex": "vue-cli-service ssr:fix-vuex",
     "ssr:serve": "vue-cli-service ssr:serve",
     "ssr:start": "vue-cli-service ssr:start",
-    "ssr:static": "vue-cli-service ssr:static"
+    "ssr:static": "vue-cli-service ssr:static -- --modern"
   },
   "version": "0.1.0"
 }
