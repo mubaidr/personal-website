@@ -2,20 +2,22 @@
   <div class="section">
     <div class="columns">
       <div class="column is-2">
-        <h2 class="title is-5 is-capitalized has-text-weight-light">
+        <h2
+          class="title is-4 has-text-weight-light is-uppercase has-text-primary"
+        >
           {{ sections.skills.title }}
         </h2>
       </div>
 
       <div class="column is-10">
         <div v-for="skill in sections.skills.lists" :key="skill.title">
-          <p class="title is-6">{{ skill.title }}</p>
+          <p
+            class="title is-5 has-text-weight-light is-uppercase has-text-primary"
+          >
+            {{ skill.title }}
+          </p>
           <p class="tags">
-            <span
-              v-for="item in skill.list"
-              :key="item.title"
-              class="tag is-light"
-            >
+            <span v-for="item in skill.list" :key="item.title" class="tag">
               {{ item.title }}
             </span>
           </p>
@@ -50,8 +52,8 @@ export default {
     return {}
   },
   computed: {
-    ...mapGetters(['sections'])
-  }
+    ...mapGetters(['sections']),
+  },
 }
 </script>
 <style>

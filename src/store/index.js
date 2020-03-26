@@ -12,22 +12,25 @@ const profile = {
     profiles: [
       {
         title: 'Github',
-        url: 'https://github.com/mubaidr'
+        url: 'https://github.com/mubaidr',
+        icon: '🧟',
       },
       {
         title: 'LinkedIn',
-        url: 'https://www.linkedin.com/in/mubaidr'
+        url: 'https://www.linkedin.com/in/mubaidr',
+        icon: '🤵',
       },
       {
         title: 'Twitter',
-        url: 'https://www.twitter.com/mubaidr'
-      }
+        url: 'https://www.twitter.com/mubaidr',
+        icon: '👥',
+      },
       /* {
         title: 'Freelancer',
         url: 'https://www.freelancer.com/u/razamubaid',
         icon: 'work'
       } */
-    ]
+    ],
   },
   sections: {
     about: {
@@ -35,27 +38,7 @@ const profile = {
       summary:
         "Web developer with more than 4 years of well-rounded experience with a degree in the Computer & Information Sciences, extensive knowledge of modern Web techniques and love for coffee. I'm also passionate about open source.",
       objective:
-        'Looking for an opportunity to work and upgrade, as well as being involved in an organization that believes in gaining a competitive edge and giving back to the community.'
-    },
-    experience: {
-      title: 'Experience',
-      list: [
-        {
-          organization: 'abc',
-          role: 'abc',
-          description: 'abc'
-        },
-        {
-          organization: 'abc',
-          role: 'abc',
-          description: 'abc'
-        },
-        {
-          organization: 'abc',
-          role: 'abc',
-          description: 'abc'
-        }
-      ]
+        'Looking for an opportunity to work and upgrade, as well as being involved in an organization that believes in gaining a competitive edge and giving back to the community.',
     },
     skills: {
       title: 'Skills',
@@ -64,83 +47,83 @@ const profile = {
           title: 'Languages & Frameworks',
           list: [
             {
-              title: 'Node.js'
+              title: 'Node.js',
             },
             {
-              title: 'TypeScript'
+              title: 'TypeScript',
             },
             {
-              title: 'JavaScript'
+              title: 'JavaScript',
             },
             {
-              title: 'VueJS'
+              title: 'VueJS',
             },
             {
-              title: 'ASP.NET Web Forms'
+              title: 'ASP.NET Web Forms',
             },
             {
-              title: 'C#'
-            }
-          ]
+              title: 'C#',
+            },
+          ],
         },
         {
           title: 'Databases',
           list: [
             {
-              title: 'MSSQL'
+              title: 'MSSQL',
             },
             {
-              title: 'PostgreSQL'
+              title: 'PostgreSQL',
             },
             {
-              title: 'MongoDB'
-            }
-          ]
+              title: 'MongoDB',
+            },
+          ],
         },
         {
           title: 'Other',
           list: [
             {
-              title: 'Docker'
+              title: 'Docker',
             },
             {
-              title: 'Jest'
+              title: 'Jest',
             },
             {
-              title: 'Pug'
+              title: 'Pug',
             },
             {
-              title: 'Bulma'
+              title: 'Bulma',
             },
             {
-              title: 'Bootstrap'
+              title: 'Bootstrap',
             },
             {
-              title: 'Stylus'
+              title: 'Stylus',
             },
             {
-              title: 'SASS/SCSS'
+              title: 'SASS/SCSS',
             },
             {
-              title: 'Git'
+              title: 'Git',
             },
             {
-              title: 'Rest API'
+              title: 'Rest API',
             },
             {
-              title: 'GraphQL API'
+              title: 'GraphQL API',
             },
             {
-              title: 'Apache Cordova'
+              title: 'Apache Cordova',
             },
             {
-              title: 'Chrome Extensions'
-            }
-          ]
-        }
-      ]
-    }
-  }
+              title: 'Chrome Extensions',
+            },
+          ],
+        },
+      ],
+    },
+  },
 }
 
 const getters = {
@@ -155,14 +138,12 @@ const getters = {
   },
   portfolio(state) {
     return state.portfolio
-  }
+  },
 }
 
-export default () => {
-  const store = new Vuex.Store({
-    state: profile,
-    getters
-  })
+const store = new Vuex.Store({
+  state: profile,
+  getters,
+})
 
-  return store
-}
+export default store

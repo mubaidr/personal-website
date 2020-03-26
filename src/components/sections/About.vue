@@ -2,7 +2,9 @@
   <div class="section">
     <div class="columns">
       <div class="column is-2">
-        <h2 class="title is-5 is-capitalized has-text-weight-light">
+        <h2
+          class="title is-4 has-text-weight-light is-uppercase has-text-primary"
+        >
           {{ sections.about.title }}
         </h2>
       </div>
@@ -24,8 +26,8 @@ export default {
     return {}
   },
   computed: {
-    ...mapGetters(['sections'])
-  }
+    ...mapGetters(['sections']),
+  },
 }
 </script>
 <style></style>

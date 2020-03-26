@@ -2,8 +2,16 @@
   <div class="hero is-large is-dark">
     <div class="hero-body">
       <div class="container">
-        <h1 class="title is-1 is-capitalized">{{ info.name }}</h1>
-        <h2 class="subtitle is-5 has-text-weight-light">{{ info.title }}</h2>
+        <h1 class="title is-1 is-uppercase has-text-primary">
+          {{ info.name }}
+        </h1>
+        <h2
+          class="subtitle is-4 has-text-weight-light is-uppercase has-text-primary"
+        >
+          {{ info.title }}
+        </h2>
+
+        <br />
 
         <div>
           <a
@@ -13,7 +21,7 @@
             target="_blank"
             class="has-text-link"
           >
-            {{ profile.title }}
+            {{ profile.icon }} {{ profile.title }}
           </a>
         </div>
       </div>
@@ -29,8 +37,8 @@ export default {
     return {}
   },
   computed: {
-    ...mapGetters(['info'])
-  }
+    ...mapGetters(['info']),
+  },
 }
 </script>
 

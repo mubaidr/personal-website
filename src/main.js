@@ -1,17 +1,12 @@
 import Vue from 'vue'
 import App from './App.vue'
 import './bulma.sass'
-import createRouter from './router'
-import createStore from './store'
+import store from './store'
 
 Vue.config.productionTip = false
 
-export default () => {
-  const store = createStore()
-  const router = createRouter()
-  return new Vue({
-    store,
-    router,
-    render: h => h(App)
-  })
-}
+new Vue({
+  store,
+  mounted: () => document.dispatchEvent(new Event('x-app-rendered')),
+  render: (h) => h(App),
+}).$mount('#app')

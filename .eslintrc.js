@@ -2,18 +2,18 @@ module.exports = {
   root: true,
 
   env: {
-    node: true
+    node: true,
   },
 
   rules: {
     'no-console': 'off',
     'no-debugger': 'off',
-    'vue/no-v-html': 'off'
+    'vue/no-v-html': 'off',
   },
 
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: 'babel-eslint',
   },
 
-  extends: ['plugin:vue/recommended', '@vue/prettier']
+  extends: ['plugin:vue/recommended', '@vue/prettier'],
 }
