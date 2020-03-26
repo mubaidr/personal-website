@@ -6,9 +6,9 @@
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build --modern",
     "lint": "vue-cli-service lint --fix",
-    "deploy": "npm run build && npm run push:subtree",
+    "deploy": "npm run build && npm run publish",
     "dev": "vue-cli-service serve --open",
-    "push:subtree": "git subtree push --prefix=dist/ mubaidr.github.io master"
+    "publish": "sh ./publish.sh"
   },
   "dependencies": {
     "bulma": "^0.8.1",
