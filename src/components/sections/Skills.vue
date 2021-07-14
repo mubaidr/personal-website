@@ -3,7 +3,7 @@
     <div class="columns">
       <div class="column is-2">
         <h2
-          class="title is-4 has-text-weight-light is-uppercase has-text-primary"
+          class="title is-2 is-uppercase has-text-info"
         >
           {{ sections.skills.title }}
         </h2>
@@ -12,12 +12,12 @@
       <div class="column is-10">
         <div v-for="skill in sections.skills.lists" :key="skill.title">
           <p
-            class="title is-5 has-text-weight-light is-uppercase has-text-primary"
+            class="title is-3 is-uppercase has-text-info"
           >
             {{ skill.title }}
           </p>
           <p class="tags">
-            <span v-for="item in skill.list" :key="item.title" class="tag">
+            <span v-for="item in skill.list" :key="item.title" class="tag is-info is-light">
               {{ item.title }}
             </span>
           </p>

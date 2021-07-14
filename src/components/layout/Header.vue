@@ -1,12 +1,12 @@
 <template>
-  <div class="hero is-large is-dark">
+  <div class="hero is-large is-link">
     <div class="hero-body">
       <div class="container">
-        <h1 class="title is-1 is-uppercase has-text-primary">
+        <h1 class="title is-1 is-uppercase">
           {{ info.name }}
         </h1>
         <h2
-          class="subtitle is-4 has-text-weight-light is-uppercase has-text-primary"
+          class="subtitle is-2"
         >
           {{ info.title }}
         </h2>
@@ -19,7 +19,8 @@
             :key="profile.title"
             :href="profile.url"
             target="_blank"
-            class="has-text-link"
+            class="has-text-link-disable"
+            rel="noreferrer"
           >
             {{ profile.icon }} {{ profile.title }}
           </a>
