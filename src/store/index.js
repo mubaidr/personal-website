@@ -34,9 +34,9 @@ const profile = {
   },
   sections: {
     about: {
-      title: 'About Me',
+      title: 'About',
       summary:
-        "Web developer with more than 4 years of well-rounded experience with a degree in the Computer & Information Sciences, extensive knowledge of modern Web techniques and love for coffee. I'm also passionate about open source.",
+        "Web developer with more than 6 years of well-rounded experience with a degree in the Computer & Information Sciences, extensive knowledge of modern Web techniques and love for coffee. I'm also passionate about open source.",
       objective:
         'Looking for an opportunity to work and upgrade, as well as being involved in an organization that believes in gaining a competitive edge and giving back to the community.',
     },
@@ -57,6 +57,12 @@ const profile = {
             },
             {
               title: 'VueJS',
+            },
+            {
+              title: 'React',
+            },
+            {
+              title: 'NestJs',
             },
             {
               title: 'ASP.NET Web Forms',

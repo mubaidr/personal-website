@@ -5,9 +5,7 @@
         <h1 class="title is-1 is-uppercase">
           {{ info.name }}
         </h1>
-        <h2
-          class="subtitle is-2"
-        >
+        <h2 class="subtitle is-2">
           {{ info.title }}
         </h2>
 
