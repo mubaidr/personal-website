@@ -2,6 +2,6 @@
 commit=$(git subtree split --prefix=dist/ -b gh-pages)
 
 # force push this commit to remote
-git push mubaidr.github.io $commit:master --force
+git push https://github.com/mubaidr/mubaidr.github.io.git $commit:master --force
 
 # git subtree push --prefix=dist/ mubaidr.github.io master

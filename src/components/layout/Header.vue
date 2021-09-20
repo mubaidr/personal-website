@@ -2,10 +2,10 @@
   <div class="hero is-large is-link">
     <div class="hero-body">
       <div class="container">
-        <h1 class="title is-1 is-uppercase">
+        <h1 class="title is-1">
           {{ info.name }}
         </h1>
-        <h2 class="subtitle is-2">
+        <h2 class="subtitle is-3">
           {{ info.title }}
         </h2>
 
@@ -17,10 +17,11 @@
             :key="profile.title"
             :href="profile.url"
             target="_blank"
-            class="has-text-link-disable"
             rel="noreferrer"
           >
-            {{ profile.icon }} {{ profile.title }}
+            <button class="button is-light is-outlined">
+              {{ profile.icon }} {{ profile.title }}
+            </button>
           </a>
         </div>
       </div>
@@ -41,4 +42,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped>
+.button {
+  margin-right: 0.5em;
+}
+</style>

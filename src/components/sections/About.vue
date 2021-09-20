@@ -2,10 +2,11 @@
   <div class="section">
     <div class="columns">
       <div class="column is-2">
-        <h2 class="title is-2 is-uppercase has-text-info">
+        <h2 class="title is-3">
           {{ sections.about.title }}
         </h2>
       </div>
+
       <div class="column is-10">
         <div class="well">
           <p v-html="sections.about.summary"></p>

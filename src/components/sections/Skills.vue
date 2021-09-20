@@ -2,21 +2,21 @@
   <div class="section">
     <div class="columns">
       <div class="column is-2">
-        <h2 class="title is-2 is-uppercase has-text-info">
+        <h2 class="title is-3">
           {{ sections.skills.title }}
         </h2>
       </div>
 
       <div class="column is-10">
         <div v-for="skill in sections.skills.lists" :key="skill.title">
-          <p class="title is-3 is-uppercase has-text-info">
+          <p class="title is-4">
             {{ skill.title }}
           </p>
           <p class="tags">
             <span
               v-for="item in skill.list"
               :key="item.title"
-              class="tag is-info is-light"
+              class="tag is-link is-light is-medium"
             >
               {{ item.title }}
             </span>
@@ -24,7 +24,8 @@
           <br />
         </div>
 
-        <!-- <br />
+        <!--
+        <br />
 
         <a
           href="https://www.freecodecamp.org/mubaidr/front-end-certification"
