@@ -1,3 +1,6 @@
+# make sure is committed
+git commit -a -m "publish" && git push
+
 # create new subtree from latest commit for dist/
 commit=$(git subtree split --prefix=dist/ -b gh-pages)
 
